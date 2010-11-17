@@ -18,7 +18,7 @@ Just add backbone_rails to your Gemfile
 Create a backbone Model and Collection with the correct corresponding url:
 
     $(function(){
-      Movie = Backbone.Model;
+      var Movie = Backbone.Model;
 
       var Movies = Backbone.Collection.extend({
         model: Movie,
@@ -28,7 +28,7 @@ Create a backbone Model and Collection with the correct corresponding url:
 
 ### In your rails app
 
-In your layout (application.html.haml) include the backbone js and all associated dependencies.
+In your layout (application.html.erb) include the backbone js and all associated dependencies.
 
 ####In your layout:
 
