@@ -15,14 +15,16 @@ Jeweler::Tasks.new do |gem|
   gem.name = "backbone_rails"
   gem.homepage = "http://github.com/chaslemley/backbone_rails"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{I am backbone_rails, I make working with backbone.js and rails3 easier.}
+  gem.description = %Q{backbone_rails does two things: 1. tell active record to exclude the root element from the to_json response. 2. Adds a class method to ActionController::Base to initialize the backbone.js integration.}
   gem.email = "chas.lemley@gmail.com"
   gem.authors = ["Chas Lemley"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
   #  gem.add_development_dependency 'rspec', '> 1.2.3'
+  gem.add_runtime_dependency "activerecord", ">= 3.0.1"
+  gem.add_runtime_dependency "rails", ">= 3.0.1"
 end
 Jeweler::RubygemsDotOrgTasks.new
 
